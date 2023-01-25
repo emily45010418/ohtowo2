@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(202, 0, 0);
+}
+img {
+  width: 60%;
+  margin-left: 24%;
+  margin-top: 140%;
+}
+
+@keyframes button {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+.radio-wrapper img {
+  animation-name: button;
+  animation-duration: 2s;
+  animation-delay: 0s;
+}
+
+.radio-wrapper {
+  display: inline-block;
+  width: 100vw;
+}
+.radio-wrapper label {
+  background-image: url(1.gif);
+  width: 100vw;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+.radio-wrapper input {
+  display: none;
+}
+.radio-wrapper input:checked ~ label {
+  background-image: url(2.gif);
+}
